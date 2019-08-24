@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".SignInActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/top_iamge"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/union13"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="Quicksand"
+            android:textStyle="bold"
+            android:textColor="@color/sign_in_color"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:text="Sign in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/top_iamge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_person_outline_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColorHint="@color/btn_fill"
+                    android:hint="User Name"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/edit_text_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_lock_outline_24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColorHint="@color/btn_fill"
+                    android:hint="Password"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/edit_text_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:onClick="openBasicCategory"
+                    android:textColor="@color/white"
+                    android:text="Sign in"
+                    android:backgroundTint="@color/btn_fill"
+                    android:background="@drawable/rounded_coner_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/sign_in_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/facebook"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/twitter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/register_btn"
+                    android:textColor="@color/btn_fill"
+                    android:text="I am here, I need an account"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Powerd by : Airx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
